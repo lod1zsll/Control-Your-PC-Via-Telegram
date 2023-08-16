@@ -16,6 +16,7 @@ For start write this in console:
 4. Open `start.bat` file
 
 _If Windows Defender swears at the `start.bat` file, then compile it through any "Bat To Exe Converter" into an `.exe` file_
+
 _start.bat file content:_ `pm2 start dist/index.js --name ControlPCBotViaTelegram`
 
 
