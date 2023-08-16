@@ -15,7 +15,7 @@ For start write this in console:
 
 Open `start.bat` file
 
-If Windows Defender swears at the `start.bat` file, then compile it through any "Bat To Exe Converter" into an `.exe` file
+_If Windows Defender swears at the `start.bat` file, then compile it through any "Bat To Exe Converter" into an `.exe` file_
 
 Open this link in your browser: `http://localhost:6333`
 
