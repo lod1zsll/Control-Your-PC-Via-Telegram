@@ -1,0 +1,66 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "license": "AGPL-version-3.0",
+  "private": false,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "keywords": ["control pc", "telegram"],
+  "author": {
+    "name": "lod1z",
+    "email": "lod1z@sandello.ru",
+    "url": "https://sandello.ru"
+  },
+  "contributors": [],
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
+    "devserver": "cross-env NODE_ENV=development webpack-dev-server --hot --open --mode development",
+    "build": "copyfiles static/assets/favicon.png ./dist/ && cross-env NODE_ENV=production webpack --mode production"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "nircmd": "^2.0.0",
+    "opener": "^1.5.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "react-toastify": "^9.1.3",
+    "ts-loader": "^9.4.4"
+  },
+  "devDependencies": {
+    "@fastify/multipart": "^7.7.3",
+    "@fastify/static": "^6.10.2",
+    "@types/node": "^20.5.0",
+    "colors": "^1.4.0",
+    "compression-webpack-plugin": "^10.0.0",
+    "copyfiles": "^2.4.1",
+    "cross-env": "^7.0.3",
+    "crypto": "^1.0.1",
+    "css-loader": "^6.8.1",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "fastify": "^4.21.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "image-webpack-loader": "^8.1.0",
+    "sass": "^1.64.1",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "telegraf": "^4.12.2",
+    "terser-webpack-plugin": "^5.3.9",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}

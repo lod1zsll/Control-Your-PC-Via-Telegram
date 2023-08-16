@@ -1,0 +1,31 @@
+main {
+    .text-secondary-emphasis {
+        color: #6c757d;
+    }
+    .input-form {
+        padding: .375rem .75rem;
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #fff;
+        background-clip: padding-box;
+        background-color: #293042;
+        border: 1px solid #fff;
+        appearance: none;
+        border-radius: .375rem;
+        outline: none;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+
+    .text-white {
+        margin-bottom: 0!important;
+    }
+
+    .link {
+        color: #0dcaf0;
+        transition: color .1s;
+        &:hover {
+            color: #0d55f0
+        }
+    }
+}

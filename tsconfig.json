@@ -1,0 +1,11 @@
+{
+    "exclude": ["./node_modules", "./client"],
+    "compilerOptions": {
+        "outDir": "./dist",
+        "esModuleInterop": true,
+        "target": "ES2022",
+        "module": "CommonJS",
+        "jsx": "react",
+        "skipLibCheck": true,
+    }
+}
