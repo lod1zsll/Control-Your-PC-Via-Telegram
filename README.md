@@ -14,6 +14,7 @@ For start write this in console:
 `npm run build`
 
 Open `start.bat` file
+
 If Windows Defender swears at the `start.bat` file, then compile it through any "Bat To Exe Converter" into an `.exe` file
 
 Open this link in your browser: `http://localhost:6333`
