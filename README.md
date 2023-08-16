@@ -7,17 +7,19 @@ From their official site Install `Node.js LTS version` from their official site:
 
 For start write this in console:
 
-`npm install`
+1. `npm install`
 
-`tsc`
+2. `tsc`
 
-`npm run build`
+3. `npm run build`
 
-Open `start.bat` file
+4. Open `start.bat` file
 
 _If Windows Defender swears at the `start.bat` file, then compile it through any "Bat To Exe Converter" into an `.exe` file_
+_start.bat file content:_ `pm2 start dist/index.js --name ControlPCBotViaTelegram`
 
-Open this link in your browser: `http://localhost:6333`
+
+5. Open this link in your browser: `http://localhost:6333`
 
 # AutoStart
 If you want the program to start with the start of the computer
