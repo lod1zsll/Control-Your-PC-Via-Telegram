@@ -10,14 +10,15 @@ For start write this in console:
 
 `npm run build`
 
-`node dist/index.js`
-
-In the same order
+Open `start.bat` file
 
 Open this link in your browser: `http://localhost:6333`
 
 # AutoStart
-If you want the program to start with the start of the computer, then create a shortcut to the `start.bat` file and add it to autorun
+If you want the program to start with the start of the computer
+
+1. Wtire this command in console: `npm i pm2 -g`
+2. Create a shortcut to the `start.bat` file and add it to autorun
 
 ## How add file to autorun: 
 1. To add a program to startup, Press Windows+R to open the “Run” dialog box.
