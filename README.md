@@ -3,7 +3,7 @@ I decided to write a typescript bot that can control your computer on Windows (b
 
 # Start
 
-From their official site Install `Node.js LTS` version from their official site:
+From their official site Install `Node.js LTS` version from their official site: https://nodejs.org/
 
 For start write this in console:
 
