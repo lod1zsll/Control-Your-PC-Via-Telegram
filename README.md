@@ -21,7 +21,7 @@ _If Windows Defender swears at the `start.bat` file, then compile it through any
 
 _start.bat file content:_ `pm2 start dist/index.js --name ControlPCBotViaTelegram`
 
-# AutoStart
+# Autostart
 If you want the program to start with the start of the computer
 
 1. Wtire this command in console: `npm i pm2 -g`
