@@ -2,6 +2,9 @@
 I decided to write a typescript bot that can control your computer on Windows (beta version)
 
 # Start
+
+From their official site Install `Node.js LTS` version from their official site:
+
 For start write this in console:
 
 `npm install`
