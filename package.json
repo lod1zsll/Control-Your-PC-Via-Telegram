@@ -1,33 +1,25 @@
 {
-  "name": "",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "commonjs",
-  "license": "AGPL-version-3.0",
-  "private": false,
-  "engines": {
-    "node": ">= 14.0.0",
-    "npm": ">= 6.0.0"
+  "name": "control-your-pc-via-telegram",
+  "version": "0.0.1",
+  "description": "I decided to write a typescript bot that can control your computer (beta version)",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "copyfiles static/assets/favicon.png ./dist/ && cross-env NODE_ENV=production webpack --mode production"
   },
-  "homepage": "",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/lod1zsll/Control-Your-PC-Via-Telegram.git"
   },
-  "bugs": "",
-  "keywords": ["control pc", "telegram"],
   "author": {
     "name": "lod1z",
     "email": "lod1z@sandello.ru",
     "url": "https://sandello.ru"
   },
-  "contributors": [],
-  "scripts": {
-    "watch": "cross-env NODE_ENV=development webpack --mode development --watch",
-    "devserver": "cross-env NODE_ENV=development webpack-dev-server --hot --open --mode development",
-    "build": "copyfiles static/assets/favicon.png ./dist/ && cross-env NODE_ENV=production webpack --mode production"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lod1zsll/Control-Your-PC-Via-Telegram/issues"
   },
+  "homepage": "https://github.com/lod1zsll/Control-Your-PC-Via-Telegram#readme",
   "dependencies": {
     "crypto": "^1.0.1",
     "dotenv": "^16.3.1",
