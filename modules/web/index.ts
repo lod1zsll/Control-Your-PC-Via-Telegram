@@ -1,4 +1,3 @@
-import openLink from "opener";
 import { IMC } from "../..";
 import { randomUUID } from "crypto";
 import fastifyStatic from "@fastify/static";
@@ -41,6 +40,5 @@ export default async function (Server: IMC): Promise<void> {
         if (err) throw err;
 
         console.log(address);
-        openLink("http://localhost:" + Server.PORT);
     });
 }
