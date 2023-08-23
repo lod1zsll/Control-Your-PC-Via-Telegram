@@ -3,13 +3,15 @@ import { IMC } from "../..";
 import config from "../../config";
 
 import onMessage from "./onMessage";
+import axios from "axios";
+import { callback } from "telegraf/typings/button";
 
 export default async function (Server: IMC) {
     const bot = Server.bot;
 
     console.log("Бот запущен!");
 
-    if(!bot) {
+    if (!bot) {
         return
     };
 
@@ -22,16 +24,17 @@ export default async function (Server: IMC) {
         });
     });
 
+
+
     bot.use((ctx, next) => {
-        if(ctx.message.chat.id === Number(config(Server).get().chat_id)) {
+        if (ctx.message !== undefined && ctx.message.chat.id === Number(config(Server).get().chat_id)) {
             return next();
         };
 
-        return ctx.replyWithMarkdownV2("Ваш аккаунт *не привязан* к компьютеру");
-    })
-
+        return ctx.replyWithHTML("Ваш аккаунт <b>не привязан</b> к компьютеру");
+    });
     onMessage(Server);
-    
+
     bot.launch();
 
     process.once('SIGINT', () => bot.stop('SIGINT'));

@@ -4,8 +4,10 @@
   "description": "I decided to write a typescript bot that can control your computer (beta version)",
   "main": "dist/index.js",
   "scripts": {
-    "build": "copyfiles static/assets/favicon.png ./dist/ && cross-env NODE_ENV=production webpack --mode production"
+    "build": "copyfiles static/assets/favicon.png ./dist/ && cross-env NODE_ENV=production webpack --mode production",
+    "watch": "copyfiles static/assets/favicon.png ./dist/ && cross-env NODE_ENV=development webpack --mode development --watch"
   },
+  "type": "commonjs",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lod1zsll/Control-Your-PC-Via-Telegram.git"
@@ -21,9 +23,11 @@
   },
   "homepage": "https://github.com/lod1zsll/Control-Your-PC-Via-Telegram#readme",
   "dependencies": {
+    "axios": "^1.4.0",
     "crypto": "^1.0.1",
     "dotenv": "^16.3.1",
     "nircmd": "^2.0.0",
+    "opener": "^1.5.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.15.0",
@@ -48,6 +52,7 @@
     "sass": "^1.64.1",
     "sass-loader": "^13.3.2",
     "style-loader": "^3.3.3",
+    "systeminformation": "^5.18.15",
     "telegraf": "^4.12.2",
     "terser-webpack-plugin": "^5.3.9",
     "webpack": "^5.88.2",

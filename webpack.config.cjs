@@ -1,4 +1,3 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TerserPlugin = require("terser-webpack-plugin");
 const CompressionPlugin = require("compression-webpack-plugin");
 const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
@@ -79,9 +78,5 @@ module.exports = {
     },
   },
 
-  plugins: [new HtmlWebpackPlugin({
-    template: "./client/index.html",
-    /* filename: "index.ejs" */
-  }), new CompressionPlugin(),
-  ],
+  plugins: [new CompressionPlugin(), ]
 }
